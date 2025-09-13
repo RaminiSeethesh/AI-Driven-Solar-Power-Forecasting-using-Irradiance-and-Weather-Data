@@ -104,7 +104,7 @@ def main():
     n_samples = 1000
     
     # Generate sample data
-    dates = pd.date_range('2023-01-01', periods=n_samples, freq='H')
+    dates = pd.date_range('2023-01-01', periods=n_samples, freq='h')
     sample_data = {
         'Date and Time': dates,
         'Global Irradiance (GHI)': np.random.normal(400, 200, n_samples).clip(0, 1000),
